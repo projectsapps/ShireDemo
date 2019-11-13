@@ -11,7 +11,7 @@
             <telerik:LayoutRow>
                 <Columns>
                     <telerik:LayoutColumn CssClass="jumbotron">
-                        <h1>H1 title, font size 36px</h1>
+                        <h1>H1 Shire of Coolgardie, font size 36px</h1>
                         <h2>H2 Title, font size 30 px. Duis nibh dolor, rhoncus in euismod at, feugiat id magna.
                             <telerik:RadButton runat="server" ID="RadButton0" Text="Button" ButtonType="SkinnedButton"></telerik:RadButton>
                         </h2>
