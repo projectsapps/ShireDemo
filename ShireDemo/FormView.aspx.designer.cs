@@ -11,7 +11,7 @@ namespace ShireDemo
 {
 
 
-    public partial class Forms
+    public partial class FormView
     {
 
         /// <summary>

@@ -1,47 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Configuration;
-using Telerik.Web.UI;
 using System.Data;
-using Telerik.Web.UI.Skins;
-using ShireDemo;
+using System.Configuration;
 using System.Data.SqlClient;
+
 
 namespace ShireDemo
 {
-    public partial class Forms : System.Web.UI.Page
+    public partial class FormView : System.Web.UI.Page
     {
-        public object DecoratedControlsRadioList { get; private set; }
-        public object FormDecorator1 { get; private set; }
-
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (toggleDecorator.SelectedValue != "1")
-            //    RadFormDecorator1.DecoratedControls = UI.FormDecoratorDecoratedControls.None;
-            //else
-            //    RadFormDecorator1.DecoratedControls = UI.FormDecoratorDecoratedControls.All;
+
         }
 
-        //protected void Login2_LogginIn(object sender, LoginCancelEventArgs e)
+        //public DataTable GetDataTable()
         //{
-        //    e.Cancel = true;
-        //    //LabelLogin.Text = "Welcome back, " + (Login2.FindControl("UserName") as TextBox).Text;
-        //}
+        //    DataTable table = new DataTable();
+        //    table.Columns.Add("Firstname");
+        //    table.Columns.Add("Lastname");
+        //    table.Columns.Add("Email");
+        //    table.Columns.Add("Occupation");
+        //    table.Columns.Add("Salary",typeof(Int32));
+        //    table.Columns.Add("IsMarried",typeof(bool));
+        //    table.Columns.Add("StartingDate",typeof(DateTime));
+        //    table.Rows.Add("Sarah", "Blake", "Product Manager", 3500, true, "01/02/2014 00:00:00");
 
-        //protected void ChangePassword1_ChangingPassword(Object sender, LoginCancelEventArgs e)
-        //{
-        //    e.Cancel = true;
-        //    //LabelChangePassword.Text = "You have successfully changed your password!";
-        //}
+        //    return table;
 
-        //protected void CreateUserWizard2_OnCreatingUser(object sender, LoginCancelEventArgs e)
-        //{
-        //    e.Cancel = true;
-        //    LabelCreateUser.Text = "User <i>" + (sender as CreateUserWizard).UserName + "</i> created! Welcome aboard!";
         //}
         public class Member
         {
@@ -59,14 +46,14 @@ namespace ShireDemo
         {
             using (SqlConnection sqlConn = new SqlConnection(GetConnectionString()))
             {
-                string sql = "Insert Into testtbl (company,unitno,fluidlevels,dates) " +
+                string sql = "Insert Into testtbl (company,unitno,fluidlevels,dates) "+
                     "Values(@company,@unitno,@fluidlevels,@dates)";
-                using (SqlCommand sqlCmd = new SqlCommand(sql, sqlConn))
+                using (SqlCommand sqlCmd = new SqlCommand(sql,sqlConn))
                 {
-                    sqlCmd.Parameters.AddWithValue("@company", member.Company);
-                    sqlCmd.Parameters.AddWithValue("@unitno", member.unitNo);
-                    sqlCmd.Parameters.AddWithValue("@fluidlevels", member.FluidLevels);
-                    sqlCmd.Parameters.AddWithValue("@dates", member.Dates);
+                    sqlCmd.Parameters.AddWithValue("@company",member.Company);
+                    sqlCmd.Parameters.AddWithValue("@unitno",member.unitNo);
+                    sqlCmd.Parameters.AddWithValue("@fluidlevels",member.FluidLevels);
+                    sqlCmd.Parameters.AddWithValue("@dates",member.Dates);
                     sqlConn.Open();
                     sqlCmd.CommandType = CommandType.Text;
                     sqlCmd.ExecuteNonQuery();
@@ -90,7 +77,7 @@ namespace ShireDemo
         }
         public void ButtonClick_Event(object sender, EventArgs e)
         {
-            if (isOkay == "OK")
+            if(isOkay == "OK")
             {
                 Member member = new Member();
                 member.Company = Company.Text; member.unitNo = int.Parse(Unitno.Text);
@@ -115,5 +102,4 @@ namespace ShireDemo
             }
         }
     }
-
 }

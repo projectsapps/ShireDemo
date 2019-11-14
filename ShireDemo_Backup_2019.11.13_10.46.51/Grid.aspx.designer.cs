@@ -11,61 +11,43 @@ namespace ShireDemo
 {
 
 
-    public partial class Forms
+    public partial class Grid
     {
 
         /// <summary>
-        /// Company control.
+        /// JumbotronLayout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Company;
+        protected global::Telerik.Web.UI.RadPageLayout JumbotronLayout;
 
         /// <summary>
-        /// Unitno control.
+        /// RadButton0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Unitno;
+        protected global::Telerik.Web.UI.RadButton RadButton0;
 
         /// <summary>
-        /// Mileage control.
+        /// RadAjaxPanel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Mileage;
+        protected global::Telerik.Web.UI.RadAjaxPanel RadAjaxPanel1;
 
         /// <summary>
-        /// fluidlevels control.
+        /// RadGrid1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList fluidlevels;
-
-        /// <summary>
-        /// dates control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dates;
-
-        /// <summary>
-        /// submit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submit;
+        protected global::Telerik.Web.UI.RadGrid RadGrid1;
     }
 }

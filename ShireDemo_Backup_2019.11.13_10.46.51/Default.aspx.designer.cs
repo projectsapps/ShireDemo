@@ -11,61 +11,61 @@ namespace ShireDemo
 {
 
 
-    public partial class Forms
+    public partial class Default
     {
 
         /// <summary>
-        /// Company control.
+        /// RadPageLayout1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Company;
+        protected global::Telerik.Web.UI.RadPageLayout RadPageLayout1;
 
         /// <summary>
-        /// Unitno control.
+        /// RadButton0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Unitno;
+        protected global::Telerik.Web.UI.RadButton RadButton0;
 
         /// <summary>
-        /// Mileage control.
+        /// Content1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Mileage;
+        protected global::Telerik.Web.UI.RadPageLayout Content1;
 
         /// <summary>
-        /// fluidlevels control.
+        /// RadButton1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList fluidlevels;
+        protected global::Telerik.Web.UI.RadButton RadButton1;
 
         /// <summary>
-        /// dates control.
+        /// RadButton2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dates;
+        protected global::Telerik.Web.UI.RadButton RadButton2;
 
         /// <summary>
-        /// submit control.
+        /// RadButton3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submit;
+        protected global::Telerik.Web.UI.RadButton RadButton3;
     }
 }
